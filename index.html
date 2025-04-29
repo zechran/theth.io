@@ -10,6 +10,7 @@
       --secondary-color: #007e6c;
       --background-color: #f4f6f8;
       --section-bg: #ffffff;
+      --alt-section-bg: #eef1f4;
       --text-color: #222222;
       --muted-text: #555555;
       --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -48,26 +49,17 @@
     .nav-links a:hover {
       color: var(--primary-color);
     }
-    header, section {
+    section {
       max-width: 960px;
       margin: auto;
       padding: 4rem 1.5rem;
       background-color: var(--section-bg);
       border-radius: 6px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      margin-top: 2rem;
     }
-    header {
-      text-align: center;
-      padding-top: 2rem;
-      padding-bottom: 0;
-      background-color: transparent;
-      box-shadow: none;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      color: var(--primary-color);
-      margin-bottom: 0;
+    section:nth-of-type(even) {
+      background-color: var(--alt-section-bg);
     }
     section h2 {
       color: var(--primary-color);
@@ -156,10 +148,6 @@
       <a href="#contact">Contact</a>
     </div>
   </nav>
-
-  <header>
-    <h1>THETH</h1>
-  </header>
 
   <section id="who">
     <h2>Who We Are</h2>
