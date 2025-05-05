@@ -21,13 +21,15 @@
     body {
       margin: 0;
       font-family: var(--font-stack);
-      background-color: var(--background-color);
+      background: url('/images/backGroundImage-bright.png') no-repeat center center fixed;
+      background-size: cover;
       color: var(--text-color);
       line-height: 1.6;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
     .navbar {
       position: sticky;
       top: 0;
@@ -63,14 +65,16 @@
       color: var(--primary-color);
     }
     section {
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity here */
+      border-bottom: 1px solid #ccc;
       max-width: 960px;
       width: 100%;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
       padding: 1rem 0.5rem;
-      border-bottom: 1px solid #ccc;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      backdrop-filter: blur(2px); /* Optional: adds a slight blur to the background */
     }
     section h2 {
       flex: 1 1 30%;
