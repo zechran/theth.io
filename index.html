@@ -10,9 +10,9 @@
       --secondary-color: #007e6c;
       --background-color: #f4f6f8;
       --section-bg: #ffffff;
-      --alt-section-bg: #eef1f4;
       --text-color: #222222;
       --muted-text: #555555;
+      --heading-color: #004c3f;
       --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     * {
@@ -32,12 +32,17 @@
       padding: 1rem 2rem;
       background-color: var(--section-bg);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
     }
     .logo {
       font-size: 1.5rem;
       font-weight: 600;
       color: var(--primary-color);
       text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
     }
     .nav-links a {
       margin-left: 2rem;
@@ -49,27 +54,36 @@
     .nav-links a:hover {
       color: var(--primary-color);
     }
-    section {
+    header, section {
       max-width: 960px;
       margin: auto;
-      padding: 4rem 1.5rem;
+      padding: 2rem 1.5rem;
       background-color: var(--section-bg);
       border-radius: 6px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      margin-top: 2rem;
     }
-    section:nth-of-type(even) {
-      background-color: var(--alt-section-bg);
+    header {
+      text-align: center;
+      padding-top: 1.5rem;
+      padding-bottom: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0;
     }
     section h2 {
-      color: var(--primary-color);
+      color: var(--heading-color);
       font-size: 2rem;
       font-weight: 500;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
     }
     section p {
-      margin: 1rem 0;
+      margin: 0.75rem 0;
       font-size: 1.05rem;
       color: var(--muted-text);
     }
@@ -79,12 +93,12 @@
     }
     .cta {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       background-color: #e6eeef;
       border-radius: 6px;
     }
     .cta h2 {
-      color: var(--primary-color);
+      color: var(--heading-color);
     }
     .cta a {
       background: var(--secondary-color);
@@ -133,7 +147,27 @@
       background-color: #dfe3e6;
       color: var(--muted-text);
       font-size: 0.9rem;
-      margin-top: 4rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .nav-links a {
+        margin: 0.5rem 0;
+      }
+      header h1 {
+        font-size: 2.25rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -145,9 +179,12 @@
       <a href="#deliver">What We Deliver</a>
       <a href="#work">How We Work</a>
       <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
+
+  <header></header>
 
   <section id="who">
     <h2>Who We Are</h2>
@@ -177,6 +214,14 @@
     <p><strong>Business Process Optimization</strong><br>Cut complexity. Build clarity. Scale faster.</p>
     <p><strong>Data Quality & Readiness</strong><br>Audit, clean, and align your data. Build a solid base for automation and AI.</p>
     <p><strong>AI & ML Solutions</strong><br>Structure your processes and data for AI adoption. Deliver real, working AI applications to your operations.</p>
+  </section>
+
+  <section id="industries">
+    <h2>Industries We Work In</h2>
+    <p><strong>Telecom & Infrastructure</strong><br>We help B2B providers modernize their OSS, align with eTOM frameworks, and implement scalable operations.</p>
+    <p><strong>Manufacturing</strong><br>We optimize production processes and enable predictive maintenance using AI and real-time data.</p>
+    <p><strong>Logistics & Supply Chain</strong><br>We streamline operations, eliminate bottlenecks, and enhance visibility through process analytics and automation.</p>
+    <p><strong>Utilities & Energy</strong><br>We support digital transformation through optimized processes and AI-based anomaly detection for critical infrastructure.</p>
   </section>
 
   <section id="contact" class="cta">
