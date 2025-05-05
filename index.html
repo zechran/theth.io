@@ -21,8 +21,11 @@
     body {
       margin: 0;
       font-family: var(--font-stack);
-      background: url('/backGroundImage-bright.png') no-repeat center center fixed;
-      background-size: cover;
+      background-color: var(--background-color);
+      background-image: url('images/your-background.jpg'); /* <- use your relative path */
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 960px auto;
       color: var(--text-color);
       line-height: 1.6;
       display: flex;
@@ -150,58 +153,60 @@
   </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="#" class="logo">THETH</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#work">How We Work</a>
-      <a href="#contact">Contact</a>
+  <div class="container">
+    <div class="navbar">
+      <a href="#" class="logo">THETH</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">How We Work</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
+  
+    <section id="about">
+      <h2>Who We Are</h2>
+      <div class="content">
+        <p>Consultancy focused on process excellence, data quality, and AI readiness — with practical, result-driven outcomes.</p>
+      </div>
+    </section>
+  
+    <section id="services">
+      <h2>What We Deliver</h2>
+      <div class="content">
+        <p><strong>Process Optimization</strong> — Eliminate inefficiencies and scale.</p>
+        <p><strong>Data Audits</strong> — Fix data gaps and align flows.</p>
+        <p><strong>AI & ML</strong> — Real-world machine learning use cases.</p>
+      </div>
+    </section>
+  
+    <section id="work">
+      <h2>How We Work</h2>
+      <div class="content">
+        <p><strong>Clarity</strong> — Simple, clean BPMN maps.</p>
+        <p><strong>Best Practices</strong> — Based on frameworks that work.</p>
+        <p><strong>Scalable Data</strong> — Measurable standards for AI readiness.</p>
+      </div>
+    </section>
+  
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="content">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p style="text-align:center; margin-top: 1rem;">
+          <a href="https://www.linkedin.com" target="_blank">Connect on LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  
+    <footer>
+      &copy; 2025 THETH Consulting. All rights reserved.
+    </footer>
   </div>
-
-  <section id="about">
-    <h2>Who We Are</h2>
-    <div class="content">
-      <p>Consultancy focused on process excellence, data quality, and AI readiness — with practical, result-driven outcomes.</p>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>What We Deliver</h2>
-    <div class="content">
-      <p><strong>Process Optimization</strong> — Eliminate inefficiencies and scale.</p>
-      <p><strong>Data Audits</strong> — Fix data gaps and align flows.</p>
-      <p><strong>AI & ML</strong> — Real-world machine learning use cases.</p>
-    </div>
-  </section>
-
-  <section id="work">
-    <h2>How We Work</h2>
-    <div class="content">
-      <p><strong>Clarity</strong> — Simple, clean BPMN maps.</p>
-      <p><strong>Best Practices</strong> — Based on frameworks that work.</p>
-      <p><strong>Scalable Data</strong> — Measurable standards for AI readiness.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="content">
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p style="text-align:center; margin-top: 1rem;">
-        <a href="https://www.linkedin.com" target="_blank">Connect on LinkedIn</a>
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 THETH Consulting. All rights reserved.
-  </footer>
 </body>
 </html>
