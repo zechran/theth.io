@@ -140,23 +140,29 @@
       width: 100%;
     }
     @media (max-width: 768px) {
-      section {
-        flex-direction: column;
-      }
-      section h2, section .content {
-        flex: 1 1 100%;
-      }
       .navbar {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0.5rem 1rem; /* Less padding for smaller screens */
       }
+    
+      .logo {
+        font-size: 1.2rem; /* Smaller logo text */
+        margin-bottom: 0.25rem;
+      }
+    
       .nav-links {
         flex-direction: column;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.25rem;
       }
+    
       .nav-links a {
-        margin: 0.5rem 0;
+        margin: 0.25rem 0;
+        font-size: 0.9rem; /* Smaller nav link text */
+      }
+      section {
+        margin-top: 1rem;
       }
     }
   </style>
