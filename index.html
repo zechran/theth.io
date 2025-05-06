@@ -41,20 +41,8 @@
       max-width: 960px;
       width: 100%;
     }
-    
     .navbar {
-      position: sticky;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: var(--background-color);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      z-index: 1000;
-      max-width: 960px;
-      margin: 0 auto;
+      padding: 0.75rem 1rem;
     }
     .logo {
       font-size: 1.7rem;
@@ -143,23 +131,34 @@
       .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0.5rem 1rem; /* Less padding for smaller screens */
+        padding: 0.75rem 1rem;
       }
     
       .logo {
-        font-size: 1.2rem; /* Smaller logo text */
-        margin-bottom: 0.25rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
       }
     
       .nav-links {
         flex-direction: column;
         width: 100%;
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
       }
     
       .nav-links a {
-        margin: 0.25rem 0;
-        font-size: 0.9rem; /* Smaller nav link text */
+        margin: 0.3rem 0;
+        font-size: 0.95rem;
+      }
+    
+      section {
+        flex-direction: column;
+        padding: 0.75rem 0.5rem;
+      }
+    
+      section h2,
+      section .content {
+        flex: 1 1 100%;
+        margin: 0;
       }
     }
   </style>
