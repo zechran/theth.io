@@ -142,17 +142,19 @@
     }
     @media (max-width: 768px) {
       .navbar {
-        padding: 0.5rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0; /* Override the desktop margin-left */
       }
     
       .nav-links a {
-        font-size: 0.9rem; /* smaller text */
-        margin: 0.3rem 0;   /* tighter spacing */
-        padding: 0.2rem 0;  /* optional: smaller touch area */
-      }
-    
-      .logo {
-        font-size: 1.4rem; /* slightly smaller logo */
+        margin: 0.5rem 0;
       }
     }
   </style>
