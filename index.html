@@ -30,10 +30,12 @@
     }
 
     .bg-container {
-      background: url('/regression-dots.png') repeat top center;
-      background-repeat: no-repeat;
-      background-size: 960px auto;
-      background-attachment: no-fixed;
+      background-image: url('/regression-dots.png');
+      background-repeat: repeat-y; /* repeat vertically */
+      background-position: top center;
+      background-size: 960px auto; /* fixed width */
+      background-attachment: scroll; /* default, or use 'fixed' if you want it to stay in place during scroll */
+      
       width: 100%;
       display: flex;
       justify-content: center;
