@@ -34,7 +34,7 @@
       background-repeat: repeat-y; /* repeat vertically */
       background-position: top center;
       background-size: 960px auto; /* fixed width */
-      background-attachment: scroll; /* default, or use 'fixed' if you want it to stay in place during scroll */
+      background-attachment: fixed; /* default, or use 'fixed' if you want it to stay in place during scroll */
       
       width: 100%;
       display: flex;
@@ -64,7 +64,7 @@
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
     
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       position: sticky;
       top: 0;
       z-index: 1000;
